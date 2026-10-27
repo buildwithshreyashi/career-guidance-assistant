@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Guidance Assistant | Plan Your Career</title>
+  <meta name="description" content="Ask about careers, required skills, learning roadmaps, and industry insights for students.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <span class="brand">Career Guidance Assistant</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h1>Plan your career, one question at a time</h1>
+      <p>Ask about a career path, the skills it needs, or how to get started. Pick a suggestion below or type your own question.</p>
+    </section>
+
+    <section class="chat-card">
+      <div id="messages" class="messages" aria-live="polite"></div>
+
+      <div id="suggestions" class="suggestions"></div>
+
+      <form id="chat-form" class="chat-form" autocomplete="off">
+        <input type="text" id="chat-input" placeholder="Type your question, e.g. skills for data science" maxlength="300" aria-label="Your question">
+        <button type="submit" class="send-btn">Send</button>
+      </form>
+    </section>
+
+    <p class="disclaimer">This assistant gives general guidance. Verify salaries, job requirements, and deadlines with official sources and your career services office.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>Chats stay in your browser and are not stored.</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
